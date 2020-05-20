@@ -7,7 +7,7 @@
 }
 
 #mentor-form .container {
-  background-color: #e0ebeb !important;
+  background-color: #e0ebeb;
 }
 
 .mentor-form__row {
@@ -17,7 +17,11 @@
 .mentor-form__card {
   margin: 65px 0 40px 0;
   padding: 40px;
-  height: 3000px !important;
+  height: 2050px !important;
+}
+
+.mentor-form__card .container {
+  background-color: transparent !important;
 }
 
 .mentor-form__card h2 {
@@ -25,6 +29,7 @@
   font-weight: 700;
   margin-bottom: 50px;
   text-align: center;
+  color: rgba(56, 54, 54, 0.623);
 }
 
 #form {
@@ -44,7 +49,7 @@
   color: #1c6c6b;
 }
 
-#form input {
+#mentor-form__inputs input {
   font-size: 1rem;
   font-weight: 600 !important;
   height: 0px !important;
@@ -56,11 +61,11 @@
   position: relative;
 }
 
-#form input:focus {
+#mentor-form__inputs input:focus {
   border: 2px solid #b6e0e0 !important;
 }
 
-#form textarea {
+#mentor-form__inputs textarea {
   font-size: 1rem;
   font-weight: 600 !important;
   height: 200px !important;
@@ -72,7 +77,7 @@
   width: 100%;
 }
 
-#form textarea:focus {
+#mentor-form__inputs textarea:focus {
   border: 2px solid #b6e0e0 !important;
   border-radius: 10px !important;
 }
@@ -83,106 +88,94 @@
 
 .mentor-form__select-days {
   height: 300px;
-  background-color: rgba(230, 230, 230, 0.664);
+  background-color: rgba(230, 230, 230, 0.76);
   width: 100%;
-  margin: 10px 40px !important;
-  padding: 20px;
+  /* margin: 0px 40px !important; */
+  padding: 0px 20px !important;
+}
+
+.metor-form__select-days-label {
+  margin-left: 0px !important;
+  margin-bottom: 0px !important;
 }
 
 .mentor-form__days-1 {
-  width: 30% !important;
-  float: left !important;
+  display: inline-block;
+  width: 40% !important;
 }
 
 .mentor-form__days-2 {
-  width: 30% !important;
-  float: right !important;
-  margin-right: 30px;
+  display: inline-block;
+  width: 40% !important;
+  margin-left: 20px !important;
 }
 
-.mentor-form__days-1 span {
+.mentor-form__days-1 span,
+.mentor-form__days-2 span {
   font-size: 0.9rem !important;
-  color: black;
+  color: rgba(47, 47, 47, 0.692);
+}
+
+.mentor-form__days-1 p,
+.mentor-form__days-2 p {
+  margin: 0 !important;
+}
+
+#form .mentor-form__pic-upload-1 {
+  font-weight: 600 !important;
+  padding: 20px;
+  border-radius: 10px;
+  display: inline-block !important;
+  margin: 0px !important;
+}
+
+#form .mentor-form__pic-upload-2 {
+  height: 0px !important;
+  padding: 20px 20px 20px 10px;
+  border-bottom: 2px solid rgb(230, 230, 230) !important;
+  margin: 0 20px 0 0 !important;
+  width: 100% !important;
+}
+
+#form .file-path-wrapper {
+  padding-left: 0;
+}
+
+#form .mentor-form__pic-upload-label {
+  display: block !important;
+  width: 100%;
+  margin-bottom: 0px !important;
+}
+
+.input-field {
+  position: relative;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 8px !important;
+}
+
+.mentor-form__terms h5 {
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 5px !important;
+}
+
+.mentor-form__terms a {
+  color: #26a69a !important;
+}
+
+.mentor-form__join-button {
+  height: 50px !important;
+  width: 100px !important;
+  margin-left: 50px !important;
+  background-color: #1c6c6b !important;
 }
 
 /* MOBILE */
 @media only screen and (max-width: 603px) {
-  #mentor-form {
-    padding: 0;
-  }
-
-  #mentor-form .container {
-    width: 100%;
-  }
-
-  .mentor-form__card {
-    padding: 20px 30px !important;
-    height: 1270px !important;
-  }
-
-  .row .col.offset-s1 {
-    margin-left: 0 !important;
-  }
-
-  .row .col.s10 {
-    width: 100% !important;
-  }
-}
-
-.mentor-form__upload {
-  position: relative;
-  background-color: brown;
-  height: 200px;
-}
-
-.mentor-form__upload-button {
-  display: block;
-  position: relative;
-  /* top: 40px;
-  left: -30px; */
-  width: 30%;
-  float: left;
-  height: 3rem;
-  line-height: 3rem;
-  cursor: pointer;
-}
-
-/* #form input[type='file'] {
-  /* display: block !important; */
-/* position: relative;
-  top: -60px;
-  left: -30px;
-  width: 100%;
-  border: none !important;
-  opacity: 1;
-  cursor: pointer !important; 
-} */
-
-#form input[type='file'] {
-  position: absolute;
-  top: 0;
-  right: 0;
-  /* left: 0;
-  bottom: 0; */
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  font-size: 20px;
-  cursor: pointer;
-  opacity: 1;
 }
 
 /* IPAD OR TAB*/
 @media only screen and (min-width: 601px) and (max-width: 1125px) {
-  .row .col.m6 {
-    width: 100%;
-  }
-
-  .row .col.offset-m3 {
-    margin: 5px;
-  }
-
-  .mentor-form__card {
-    height: 1050px !important;
-  }
 }

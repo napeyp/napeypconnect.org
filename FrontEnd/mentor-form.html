@@ -167,74 +167,76 @@
           <div class="col s10 m6 offset-s1 offset-m3">
             <!--Panel-->
             <div class="card large mentor-form__card">
+              <div class="container">
                 <h2>You are applying as a mentor</h2>
                 <form class="mentor-form__form" id="form">  
-                    <div class="row"> 
-                      <div>     
-                        <label for="title">Title:</label>
-                        <input id="title" class="validate" placeholder="Mr/Mrs/Dr/Prof/Engr" type="text">
-                      </div>  
-                      <div>
-                        <label for="firstname">Firstname:</label>
-                        <input id="firstname" class="validate" placeholder="Firstname" type="text">
-                      </div>
-                      <div>
-                        <label for="lastname">Lastname:</label>
-                        <input id="lastname" class="validate" placeholder="Lastname" type="text">
-                      </div>
-                      <div>
-                        <label for="napeid">NAPE ID:</label>
-                        <input id="title" disabled class="validate" value="067834521" type="text">
-                      </div>
-                      <div>
-                        <label for="email">Email:</label>
-                        <input id="email" class="validate" placeholder="Email" type="email">
-                      </div>
-                      <div>
-                        <label for="aos">Area of Specialization:</label>
-                        <input id="aos" class="validate" placeholder="Specialization" type="text">
-                      </div>
-                      <div>
-                        <label for="textarea1">About</label>
-                        <textarea id="about" class=""></textarea>
-                      </div>
-                      <div>
-                        <label for="affilliation">Affilliation:</label>
-                        <select multiple>
-                            <option value="" disabled selected>Select as many that applies</option>
-                            <option value="1">NAPE</option>
-                            <option value="2">SEG</option>
-                            <option value="3">AAPG</option>
-                            <option value="4">NMGS</option>
-                            <option value="5">AGU</option>
-                            <option value="6">IHS</option>
-                        </select>
-                      </div>
-                      <div>
-                        <label for="org">Organizaiton:</label>
-                        <input id="org" class="validate" placeholder="Organizaiton" type="text">
-                      </div>
-                      <div>
-                        <label for="position">Position:</label>
-                        <input id="position" class="validate" placeholder="Position" type="text">
-                      </div>
-                      <div>
-                        <label for="yoe">Years of experience:</label>
-                        <select>
-                            <option value="" disabled selected>Select years of experience</option>
-                            <option value="1">1-5</option>
-                            <option value="2">5-10</option>
-                            <option value="3">>10</option>
-                        </select>
-                      </div>
-                      <div>
-                        <label for="qualification">Academic Qualification:</label>
-                        <input id="qualification" class="validate" placeholder="Qualifications" type="text">
-                      </div>
-                      <div>
-                        <label for="days">Select Days Available:</label>
-                        <div class=" col m12 s12 mentor-form__select-days">
-                            <div class=" col m3 mentor-form__days-1">
+                    <div class="row " id="mentor-form__inputs" > 
+                        <div class="" >     
+                          <label for="title">Title:</label>
+                          <input id="title" class="validate" placeholder="Mr/Mrs/Dr/Prof/Engr" type="text">
+                        </div>  
+                        <div>
+                          <label for="firstname">Firstname:</label>
+                          <input id="firstname" class="validate" placeholder="Firstname" type="text">
+                        </div>
+                        <div>
+                          <label for="lastname">Lastname:</label>
+                          <input id="lastname" class="validate" placeholder="Lastname" type="text">
+                        </div>
+                        <div>
+                          <label for="napeid">NAPE ID:</label>
+                          <input id="title" disabled class="validate" value="067834521" type="text">
+                        </div>
+                        <div>
+                          <label for="email">Email:</label>
+                          <input id="email" class="validate" placeholder="Email" type="email">
+                        </div>
+                        <div>
+                          <label for="aos">Area of Specialization:</label>
+                          <input id="aos" class="validate" placeholder="Specialization" type="text">
+                        </div>
+                        <div>
+                          <label for="textarea1">About</label>
+                          <textarea id="about" class=""></textarea>
+                        </div>
+                        <div>
+                          <label for="affilliation">Affilliation:</label>
+                          <select multiple>
+                              <option value="" disabled selected>Select as many that applies</option>
+                              <option value="1">NAPE</option>
+                              <option value="2">SEG</option>
+                              <option value="3">AAPG</option>
+                              <option value="4">NMGS</option>
+                              <option value="5">AGU</option>
+                              <option value="6">IHS</option>
+                          </select>
+                        </div>
+                        <div>
+                          <label for="org">Organizaiton:</label>
+                          <input id="org" class="validate" placeholder="Organizaiton" type="text">
+                        </div>
+                        <div>
+                          <label for="position">Position:</label>
+                          <input id="position" class="validate" placeholder="Position" type="text">
+                        </div>
+                        <div>
+                          <label for="yoe">Years of experience:</label>
+                          <select>
+                              <option value="" disabled selected>Select years of experience</option>
+                              <option value="1">1-5</option>
+                              <option value="2">5-10</option>
+                              <option value="3">>10</option>
+                          </select>
+                        </div>
+                        <div>
+                          <label for="qualification">Academic Qualification:</label>
+                          <input id="qualification" class="validate" placeholder="Qualifications" type="text">
+                        </div>
+                        <div>
+                            <div class="row metor-form__select-days-label">
+                              <label for="days">Select Days Available:</label>
+                            </div>
+                            <div class=" mentor-form__days-1">
                                 <p>
                                     <label>
                                       <input type="checkbox" class="filled-in"  />
@@ -260,7 +262,7 @@
                                     </label>
                                   </p>
                             </div>
-                            <div class=" col m3 mentor-form__days-2">
+                            <div class="  mentor-form__days-2">
                                 <p>
                                     <label>
                                       <input type="checkbox" class="filled-in"  />
@@ -286,28 +288,31 @@
                                     </label>
                                   </p>
                             </div>
-                          </div>
-                      </div>
-                      <div>
-                        <div><label for="picture">Picture:</label></div>
-                        <div class="mentor-form__upload">
-                          <div class="btn mentor-form__upload-button">
-                            <span>File</span>
-                            <input type="file">
-                          </div>
-                          <!-- <div class="file-path-wrapper">
-                            <input class="file-path validate" type="text">
-                          </div> -->
                         </div>
-                        </div>
-                      </div>
-                    </div> 
-                        
                     </div>
-                    
-                      <!-- <a href="#!" class="modal-close waves-effect waves-green btn-small "> ENTER </a> -->
+                    <div class="mentor-form__pic-upload-label row">
+                      <label for="file">Picture:</label> 
+                    </div>
+                    <div class="row file-field input-field">
+                      <div class="btn">
+                        <span>File</span>
+                        <input type="file" class="mentor-form__pic-upload-1">
+                      </div>
+                      <div class="file-path-wrapper">
+                        <input class="file-path validate mentor-form__pic-upload-2" type="text" placeholder="Upload your picture (filesize: <=2mb)">
+                      </div>
+                    </div>
+                  </div>
+                    <div class="mentor-form__terms">
+                      <h5>
+                          By signing in, you agree to <a href="">terms of services</a> and <a href="">Privacy Policy</a>
+                      </h5>
+                      <button class="btn right mentor-form__join-button">JOIN</button>
+                  </div>
                 </form>
+              </div>
             </div>
+          </div>
         </div>
       </div>
     </section>
