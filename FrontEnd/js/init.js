@@ -12,13 +12,7 @@ $(document).click(function (e) {
   }
 });
 
-// //modal
-// document.addEventListener('DOMContentLoaded', function () {
-//   var elems = document.querySelectorAll('.modal');
-//   var instances = M.Modal.init(elems, options);
-// });
-
-// Or with jQuery
+// modal
 
 $(document).ready(function () {
   $('.modal').modal({
@@ -27,4 +21,12 @@ $(document).ready(function () {
     inDuration: 600,
     outDuration: 600,
   });
+});
+
+// $(document).ready(function () {
+//   M.updateTextFields();
+// });
+
+$(document).ready(function () {
+  $('select').formSelect();
 });
