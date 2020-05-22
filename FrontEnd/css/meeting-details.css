@@ -1,0 +1,189 @@
+/*Page: Mentor INFO Starts here*/
+
+#meeting-details {
+  z-index: 100 !important;
+  background: rgba(139, 147, 155, 0.986) !important;
+  padding: 100px;
+}
+
+.meeting-details__row {
+  margin: 0;
+  position: relative;
+}
+
+.meeting-details__card {
+  margin: 0;
+  padding: 80px 20px;
+  height: 1600px !important;
+}
+
+.meeting-details__card h1 {
+  font-size: 3.2rem;
+  text-align: center;
+  font-weight: 900;
+  margin: 30px;
+}
+
+.meeting-details__card p {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 600;
+  margin: 20px 60px 50px 60px;
+}
+
+.meeting-details__card span {
+  font-weight: 700;
+}
+
+.meeting-details__card img {
+  width: 100%;
+}
+
+.meeting-details__abstract h5 {
+  color: #559291;
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin: 50px;
+}
+
+.meeting-details__vertical-line {
+  position: absolute;
+  bottom: 0px;
+  right: 420px;
+  height: 850px;
+  border: 1px solid #a7c7c6;
+}
+
+.meeting-details__abstract p {
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: justify;
+  margin: 20px;
+}
+
+@media only screen and (min-width: 603px) {
+  .meeting-details__col-1 {
+    width: 60% !important;
+    float: left;
+    margin: 0 !important;
+  }
+  .meeting-details__col-2 {
+    width: 40% !important;
+    float: right !important;
+    margin: 0 !important;
+    position: relative;
+    overflow: visible;
+  }
+
+  .meeting-details__close-button {
+    position: relative;
+    top: 50px;
+    right: 50px;
+  }
+}
+/* MOBILE */
+@media only screen and (max-width: 603px) {
+  #meeting-details {
+    padding: 0;
+  }
+
+  .meeting-details__card {
+    padding: 40px 5px;
+    height: 100% !important;
+    position: relative;
+    overflow: auto;
+  }
+
+  .meeting-details__card h1 {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 800;
+    margin: 10px;
+  }
+
+  .meeting-details__card p {
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: 700;
+    margin: 20px 10px 50px 10px;
+  }
+
+  .meeting-details__abstract h5 {
+    color: #559291;
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin: 40px;
+  }
+
+  .meeting-details__abstract p {
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: justify;
+    margin: 10px;
+  }
+
+  .meeting-details__col-1 {
+    width: 100% !important;
+  }
+  .meeting-details__col-2 {
+    width: 100% !important;
+  }
+
+  .meeting-details__vertical-line {
+    border: none;
+  }
+}
+
+/* IPAD OR TAB*/
+@media only screen and (min-width: 601px) and (max-width: 800px) {
+  #meeting-details .container {
+    width: 100%;
+  }
+
+  .meeting-details__card {
+    padding: 80px 20px;
+    overflow: auto !important;
+  }
+
+  .meeting-details__col-1 {
+    width: 55% !important;
+    float: left;
+    margin: 0 !important;
+  }
+  .meeting-details__col-2 {
+    width: 45% !important;
+    float: right !important;
+    margin: 0 !important;
+  }
+
+  .meeting-details__vertical-line {
+    top: 760px;
+    right: 250px;
+    height: 1680px;
+  }
+}
+
+@media only screen and (min-width: 801px) and (max-width: 1125px) {
+  #meeting-details .container {
+    width: 100%;
+  }
+
+  .meeting-details__card {
+    padding: 80px 20px;
+    overflow: auto !important;
+  }
+
+  .meeting-details__col-1 {
+    width: 55% !important;
+    float: left;
+    margin: 0 !important;
+  }
+  .meeting-details__col-2 {
+    width: 45% !important;
+    float: right !important;
+    margin: 0 !important;
+  }
+  .meeting-details__vertical-line {
+    border: none;
+  }
+}

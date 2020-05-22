@@ -120,7 +120,8 @@ label span {
   margin-top: 0 !important;
 }
 
-.join-program__terms a {
+.join-program__terms a,
+.join-program-partners a {
   color: #26a69a !important;
 }
 
