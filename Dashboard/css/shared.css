@@ -1,0 +1,460 @@
+/*Shared CSS for all pages*/
+
+/*SECTION: HEADER STARTS HERE*/
+.container {
+  width: 92%;
+}
+
+.bua {
+  background-color: #1c6c6b !important;
+}
+
+.gray {
+  background-color: rgba(226, 222, 222, 0.856) !important;
+}
+
+/*NAV BAR*/
+nav {
+  height: 6.25rem;
+  line-height: 6.25rem;
+  font-size: 1.2rem;
+  background-color: #1c6c6b;
+}
+
+nav ul {
+  margin: 18px;
+  display: inline-block;
+}
+
+nav ul a {
+  font-size: 1.2rem;
+}
+
+header .brand-logo {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/*NAV BAR: SEARCH*/
+.search {
+  display: inline-block;
+  margin: 8px;
+  position: relative;
+  bottom: 5px;
+}
+
+.search-wrapper {
+  color: grey;
+  background-color: white;
+  border-radius: 10px;
+  width: 90%;
+  height: 30px !important;
+  padding: 8px 45px 8px 30px !important;
+  margin: 2px;
+  position: relative;
+}
+
+.search-wrapper i.material-icons {
+  position: absolute;
+  top: -15px;
+  right: 15px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+input[type='text'] {
+  border: none !important;
+  font-size: 14px !important;
+  margin: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  display: block !important;
+}
+
+input[type='text']:focus {
+  box-shadow: none !important;
+}
+
+/*Nav bar: Login & Join*/
+.join-login-wrapper {
+  display: block;
+  position: relative;
+  bottom: 10px;
+  height: auto;
+}
+
+.join-login-wrapper a {
+  display: block;
+  padding: 0px 10px;
+  font-size: 1.2rem;
+  margin: 0 10px !important;
+  height: 35px;
+}
+
+/*Left Aside NavBar*/
+ul.side-nav.leftside-navigation {
+  top: 94px !important;
+}
+
+/*Side Nav Contents: Display-Non*/
+.sidenav-content {
+  display: none;
+  background-color: #1c6c6b;
+  padding: 40px 0 40px 0;
+  margin: 0;
+  z-index: 101;
+  position: fixed;
+  width: 100vw;
+  text-align: justify;
+}
+
+/*Displays SideNav*/
+.display {
+  display: block !important;
+}
+
+.sidenav-content a,
+.sidenav-content div,
+.sidenav-content li {
+  font-size: 1.5rem;
+  color: white !important;
+  padding: 5px 40px 5px 40px;
+}
+
+.sidenav-content div {
+  color: grey !important;
+}
+
+.sidenav-content i.material-icons {
+  font-size: 1.8rem;
+  top: 0.3rem;
+}
+
+.sidenav-content li:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/*SIDE NAV BUTTON*/
+.toggle-button:focus {
+  outline: none;
+}
+
+.toggle-button__container {
+  display: none;
+}
+
+/*MOBILE AND TAB SCREEN BREAKS*/
+@media only screen and (max-width: 992px) {
+  /*DISPLAY SIDENAV  BUTTON */
+  .toggle-button__container {
+    display: block;
+  }
+
+  .toggle-button:focus {
+    outline: none;
+  }
+
+  .top-topics span.badge.new {
+    width: 5rem !important;
+  }
+  .btn-floating {
+    background-color: #26a69a !important;
+  }
+
+  ul.side-nav.leftside-navigation {
+    top: 89px !important;
+  }
+}
+
+@media only screen and (max-width: 603px) {
+  .sidebar-collapse {
+    position: absolute;
+    left: -160px;
+    top: -58px;
+  }
+  .sidebar-collapse {
+    position: absolute;
+    left: -170px;
+    top: -50px;
+  }
+  .waves-effect {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    vertical-align: middle;
+    z-index: 1;
+    transition: 0.3s ease-out;
+  }
+
+  #center-content__1 {
+    padding-left: 20px !important;
+  }
+}
+
+/*SIDENAV  BUTTON FOR MOBILE AND TAB*/
+.toggle-button {
+  width: 3rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin: 1.8rem 1rem;
+}
+
+.toggle-button__bar {
+  width: 100%;
+  height: 0.2rem;
+  background: #e0ebeb;
+  display: block;
+  margin: 0.6rem 0;
+}
+center-content-1 {
+  padding-left: 0px !important;
+}
+
+/*NAV BAR FOR TAB SCREEN SIZE */
+@media only screen and (min-width: 993px) and (max-width: 1130px) {
+  .nav__links {
+    width: 70% !important;
+    margin: 0;
+    position: relative;
+    left: 10rem;
+  }
+
+  .join-login-wrapper {
+    bottom: 25px !important;
+  }
+
+  .join-login-wrapper a {
+    display: inline !important;
+    bottom: 25px;
+  }
+}
+/*SECTION: HEADER ENDS HERE*/
+
+/*SECTION: Main content STARTS HERE*/
+#content {
+  margin-top: 2rem;
+  background-color: #e8f1f1 !important;
+}
+
+#breadcrumbs-wrapper {
+  background-color: #e0ebeb !important;
+}
+
+.card-title {
+  font-weight: 700 !important;
+}
+
+.tab {
+  float: right;
+}
+
+.tab-heading {
+  padding: 10px;
+  background-color: #e0ebeb !important;
+  font-weight: 700 !important;
+}
+
+.top-topics a {
+  display: block !important;
+}
+.top-topics li a i {
+  line-height: inherit;
+  width: 3rem;
+  font-size: 2.2rem;
+  display: block;
+  float: left;
+  text-align: center;
+  margin-right: 1rem;
+}
+
+.top-topics span.badge.new {
+  font-weight: 600;
+  font-size: 0.8rem;
+  color: rgb(10, 10, 10);
+  background-color: #df5b879e;
+  border-radius: 50px;
+  line-height: 25px;
+  margin-top: 11px;
+  width: 7rem;
+}
+
+.top-topics a {
+  color: #1c6c6b !important;
+}
+
+.top-topics .nav-text {
+  color: #101111 !important;
+  font-weight: 600 !important;
+  font-size: 0.9rem !important;
+}
+
+.top-topics li {
+  margin-top: 10px;
+}
+
+#articles span {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+#articles p {
+  text-align: justify;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+
+#articles + div {
+  text-align: right;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+#articles + div a {
+  color: rgb(62, 188, 246);
+}
+/*SECTION: Main content ENDS HERE*/
+
+/*MAP SECTION: STARTS HERE*/
+#map {
+  height: 360px !important;
+}
+
+#mapdiv {
+  width: 100%;
+  height: 370px;
+}
+
+.amcharts-map-image-london {
+  -webkit-animation: am-pulsating 1s ease-out infinite;
+  animation: am-pulsating 1s ease-out infinite;
+}
+
+@-webkit-keyframes am-pulsating {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+@keyframes am-pulsating {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+.amcharts-map-area {
+  -webkit-transition: all 0.3s 0.3s ease-out;
+  transition: all 0.3s 0.3s ease-out;
+  fill: #26a69a;
+  stroke: #d6e7e6;
+}
+
+.amcharts-map-area:hover {
+  fill: #93c765;
+  stroke: #93c765;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+/*MAP SECTION: ENDS HERE*/
+
+/*SECTION: FOOTER STARTS HERE*/
+#footer {
+  background-color: #1c6c6b;
+  height: auto;
+  padding: 50px 30px;
+}
+
+.footer_links {
+  padding-left: 60px !important;
+  width: 20% !important;
+  margin: auto !important;
+}
+
+.nape-logo-footer img {
+  height: 46px;
+  margin-bottom: 30px;
+}
+
+#footer p {
+  color: #a7c7c6;
+  line-height: 2rem;
+}
+
+article + p {
+  font-weight: 700;
+  margin-top: 60px;
+  color: white !important;
+}
+
+#footer h3 {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: white;
+}
+
+#footer ul,
+a {
+  color: #a7c7c6;
+  line-height: 3rem;
+}
+
+#footer hr {
+  border: 1px solid #a7c7c6;
+}
+
+#footer .copy-right {
+  margin-top: 30px !important;
+  color: #a7c7c6;
+}
+
+.center-content-1 {
+  padding-left: 80px !important;
+}
+
+.center-content-2 {
+  padding-left: 20px !important;
+}
+
+.nape-contact a {
+  margin: 2px 6px;
+}
+
+.nape-contact img {
+  height: 30px;
+}
+/*SECTION: FOOTER ENDS HERE*/
+
+/*BRAND LOGO AND SIDENAV BUTTON FOR MOBILE SCREEN*/
+@media only screen and (max-width: 603px) {
+  .brand-logo img {
+    height: 54px;
+    margin-top: 14px;
+    margin-left: 80px;
+  }
+
+  .sidebar-collapse {
+    position: absolute;
+    left: -160px;
+    top: -58px;
+  }
+}
