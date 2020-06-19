@@ -1,6 +1,10 @@
 /*Shared CSS for all pages*/
 
 /*SECTION: HEADER STARTS HERE*/
+#main {
+  background-color: #e8f1f1;
+}
+
 .container {
   width: 92%;
 }
@@ -15,7 +19,7 @@
 
 /*NAV BAR*/
 nav {
-  height: 6.25rem;
+  height: 64px;
   line-height: 6.25rem;
   font-size: 1.2rem;
   background-color: #1c6c6b;
@@ -35,6 +39,25 @@ header .brand-logo {
   padding: 0 !important;
 }
 
+.nav__links {
+  width: 100% !important;
+  margin: 0;
+  position: relative;
+  left: 18rem;
+}
+
+nav ul li {
+  padding: 0 6px;
+}
+
+nav i.material-icons {
+  font-size: 20px;
+}
+
+.dropdown-content li > a {
+  font-size: 14px !important;
+}
+
 /*NAV BAR: SEARCH*/
 .search {
   display: inline-block;
@@ -47,10 +70,9 @@ header .brand-logo {
   color: grey;
   background-color: white;
   border-radius: 10px;
-  width: 90%;
-  height: 30px !important;
+  width: 500px;
   padding: 8px 45px 8px 30px !important;
-  margin: 2px;
+  margin-top: 12px;
   position: relative;
 }
 
@@ -93,7 +115,7 @@ input[type='text']:focus {
 
 /*Left Aside NavBar*/
 ul.side-nav.leftside-navigation {
-  top: 94px !important;
+  top: 64px !important;
 }
 
 /*Side Nav Contents: Display-Non*/
@@ -134,6 +156,16 @@ ul.side-nav.leftside-navigation {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
+.avatar-status i {
+  right: 4px;
+  width: 10px !important;
+}
+
+/* .avatar-status {
+  line-height: 44px;
+  width: 54px;
+} */
+
 /*SIDE NAV BUTTON*/
 .toggle-button:focus {
   outline: none;
@@ -144,7 +176,7 @@ ul.side-nav.leftside-navigation {
 }
 
 /*MOBILE AND TAB SCREEN BREAKS*/
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1125px) {
   /*DISPLAY SIDENAV  BUTTON */
   .toggle-button__container {
     display: block;
@@ -161,8 +193,22 @@ ul.side-nav.leftside-navigation {
     background-color: #26a69a !important;
   }
 
-  ul.side-nav.leftside-navigation {
-    top: 89px !important;
+  /* ul.side-nav.leftside-navigation {
+    top: 65px !important;
+  } */
+
+  .search-wrapper {
+    border-radius: 0px !important;
+    height: 40px !important;
+  }
+
+  .brand-logo img {
+    height: 54px;
+    margin-left: 200px;
+  }
+
+  .sidebar-collapse {
+    left: -150px;
   }
 }
 
@@ -192,6 +238,10 @@ ul.side-nav.leftside-navigation {
   #center-content__1 {
     padding-left: 20px !important;
   }
+
+  /* ul.side-nav.leftside-navigation {
+    top: 65px !important;
+  } */
 }
 
 /*SIDENAV  BUTTON FOR MOBILE AND TAB*/
@@ -219,10 +269,10 @@ center-content-1 {
 /*NAV BAR FOR TAB SCREEN SIZE */
 @media only screen and (min-width: 993px) and (max-width: 1130px) {
   .nav__links {
-    width: 70% !important;
+    width: 100% !important;
     margin: 0;
     position: relative;
-    left: 10rem;
+    left: 20rem;
   }
 
   .join-login-wrapper {
@@ -238,7 +288,6 @@ center-content-1 {
 
 /*SECTION: Main content STARTS HERE*/
 #content {
-  margin-top: 2rem;
   background-color: #e8f1f1 !important;
 }
 
@@ -327,9 +376,61 @@ center-content-1 {
   height: 360px !important;
 }
 
+#mapdiv__card {
+  margin-bottom: 0 !important;
+}
 #mapdiv {
   width: 100%;
-  height: 370px;
+  height: 300px;
+}
+
+#mapdiv__card-legend {
+  margin-top: 2px !important;
+}
+
+#mapdiv__legend {
+  width: 100%;
+  height: 145px;
+  padding: 10px 20px;
+  overflow: hidden;
+}
+
+#mapdiv__legend li {
+  color: rgba(8, 8, 8, 0.808);
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 10px;
+  position: relative;
+  display: inline-block;
+}
+
+#mapdiv__legend i {
+  vertical-align: middle;
+}
+
+#mapdiv__legend a {
+  min-width: 3rem;
+  padding: 0 6px;
+  font-size: 0.7rem;
+  line-height: 22px;
+  height: 22px;
+  margin-left: 10px;
+}
+
+@media only screen and (max-width: 1125px) {
+  #mapdiv__legend li {
+    margin: 5px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  #mapdiv__legend li {
+    margin: 2px;
+  }
+}
+
+#mapdiv__legend {
+  float: right;
 }
 
 .amcharts-map-image-london {
@@ -362,8 +463,8 @@ center-content-1 {
 .amcharts-map-area {
   -webkit-transition: all 0.3s 0.3s ease-out;
   transition: all 0.3s 0.3s ease-out;
-  fill: #26a69a;
-  stroke: #d6e7e6;
+  fill: #9e9e9e;
+  stroke: #37474f45;
 }
 
 .amcharts-map-area:hover {
@@ -415,7 +516,7 @@ article + p {
 #footer ul,
 a {
   color: #a7c7c6;
-  line-height: 3rem;
+  line-height: 64px;
 }
 
 #footer hr {
@@ -448,13 +549,12 @@ a {
 @media only screen and (max-width: 603px) {
   .brand-logo img {
     height: 54px;
-    margin-top: 14px;
     margin-left: 80px;
   }
 
   .sidebar-collapse {
     position: absolute;
     left: -160px;
-    top: -58px;
+    top: -45px;
   }
 }

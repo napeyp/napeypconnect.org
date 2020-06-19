@@ -25,17 +25,16 @@
   <!-- INCLUDED PLUGIN CSS ON THIS PAGE -->
   <link href="vendors/prism/prism.css" type="text/css" rel="stylesheet">
   <link href="vendors/perfect-scrollbar/perfect-scrollbar.css" type="text/css" rel="stylesheet">
-  <link href="vendors/flag-icon/css/flag-icon.min.css" type="text/css" rel="stylesheet">
   <link
     href="css/shared.css"
     type="text/css"
     rel="stylesheet"
     media="screen,projection"
-    />
-
+    />  
     <script src="https://www.amcharts.com/lib/3/ammap.js"></script>
     <script src="https://www.amcharts.com/lib/3/maps/js/worldLow.js"></script>
     <script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
+    <script src="https://use.fontawesome.com/0cbc9dec2f.js"></script>
 </head>
 
 <body>
@@ -44,39 +43,183 @@
   <!-- START HEADER -->
   <header class="">
     <!--NAV BAR STARTS HERE-->
-  <div class="navbar-fixed">
-    <nav class="bua">
-      <div class="container">
-        <div class="nav-wrapper">
-          <a href="#!" class="brand-logo left">
-            <img
-              src="img/logo/NAPE-logo2-1.png"
-              alt="NAPE-logo"
-              id="NAPE_logo2_1"
-            />
-          </a>
-          <!--Nav Bar Links-->
-          <ul class="right hide-on-med-and-down nav__links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="career.html">Career</a></li>
-            <li><a href="publication.html">Publication</a></li>
-            <li><a href="meeting.html">Meeting</a></li>
-            <li><a href="membership.html">Membership</a></li>
-            <li class="search">
-              <div class="search-wrapper">
-                <input id="search" placeholder="Search" type="text"><i class="material-icons small">search</i>
-              </div>
-            </li>
-            <li class="join-login-wrapper">
-                <a href="meeting.html"> <img src="img/home/joinicon.png" alt=""> Join</a>
-          
-                <a href="membership.html"> <img src="img/home/logouticon.png" alt=""> Log Out</a>
-            </li>
-          </ul>
+    <div class="navbar-fixed">
+      <nav class="bua">
+        <div class="container">
+          <div class="nav-wrapper">
+            <a href="#!" class="brand-logo left">
+              <img
+                src="img/logo/NAPE-logo2-1.png"
+                alt="NAPE-logo"
+                id="NAPE_logo2_1"
+              />
+            </a>
+            <!--Nav Bar Links-->
+            <ul class="hide-on-med-and-down nav__links">
+              <li class="">
+                <a
+                  href="javascript:void(0);"
+                  class="waves-effect waves-block waves-light translation-button"
+                  data-activates="translation-dropdown"
+                >
+                  <i
+                    class="material-icons"
+                    style="display: inline; vertical-align: middle;"
+                    >web</i
+                  >
+                  <span
+                    class="nav-text"
+                    style="display: inline; vertical-align: middle;"
+                    >Website</span
+                  >
+                </a>
+              </li>
+              <li class="search waves-block">
+                <div class="search-wrapper">
+                  <input id="search" placeholder="Search" type="text" /><i
+                    class="material-icons small"
+                    >search</i
+                  >
+                </div>
+              </li>
+              <li>
+                <a
+                  href="javascript:void(0);"
+                  class="waves-effect waves-block waves-light notification-button"
+                  data-activates="notifications-dropdown"
+                >
+                  <i class="material-icons"
+                    >notifications_none
+                    <small class="notification-badge pink accent-2">14</small>
+                  </i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="javascript:void(0);"
+                  class="waves-effect waves-block waves-light profile-button"
+                  data-activates="profile-dropdown"
+                >
+                  <span class="avatar-status avatar-online">
+                    <img src="images/avatar/avatar-7.png" alt="avatar" />
+                    <i></i>
+                  </span>
+                </a>
+              </li>
+              <li class="">
+                <a href="logout.html" class="waves-block">
+                  <img src="img/home/logouticon.png" alt="" /> Log Out</a
+                >
+              </li>
+            </ul>
+
+            <!--Translation Dropdown-->
+            <ul id="translation-dropdown" class="dropdown-content">
+              <li>
+                <a href="#!" class="teal-text text-darken-4">
+                  <i class="material-icons">home</i> Home</a
+                >
+              </li>
+              <li>
+                <a href="#!" class="teal-text text-darken-4">
+                  <i class="material-icons">pets</i> Career</a
+                >
+              </li>
+              <li>
+                <a href="#!" class="teal-text text-darken-4">
+                  <i class="material-icons">book</i> Publication</a
+                >
+              </li>
+              <li>
+                <a href="#!" class="teal-text text-darken-4">
+                  <i class="material-icons">poll</i> Meeting</a
+                >
+              </li>
+              <li>
+                <a href="#!" class="teal-text text-darken-4">
+                  <i class="material-icons">group_add</i> Membership</a
+                >
+              </li>
+            </ul>
+
+            <!-- notifications-dropdown -->
+            <ul id="notifications-dropdown" class="dropdown-content">
+              <li>
+                <h6>
+                  NOTIFICATIONS
+                  <span class="new badge">14</span>
+                </h6>
+              </li>
+              <li class="divider"></li>
+              <li>
+                <a href="#!" class="teal-text text-darken-4">
+                  <span class="material-icons icon-bg-circle cyan small"
+                    >view_agenda</span
+                  >
+                  New topic started in Discussion Room!</a
+                >
+                <time class="media-meta" datetime="2015-06-12T20:50:48+08:00"
+                  >2 hours ago</time
+                >
+              </li>
+              <li>
+                <a href="#!" class="teal-text text-darken-4">
+                  <span class="material-icons icon-bg-circle red small"
+                    >stars</span
+                  >
+                  New NAPE-YP technical meeting alert!</a
+                >
+                <time class="media-meta" datetime="2015-06-12T20:50:48+08:00"
+                  >3 days ago</time
+                >
+              </li>
+              <li>
+                <a href="#!" class="teal-text text-darken-4">
+                  <span
+                    class="material-icons icon-bg-circle deep-orange small"
+                    >today</span
+                  >
+                  NAPE conference started</a
+                >
+                <time class="media-meta" datetime="2015-06-12T20:50:48+08:00"
+                  >6 days ago</time
+                >
+              </li>
+              <li>
+                <a href="#!" class="teal-text text-darken-4">
+                  <span class="material-icons icon-bg-circle amber small"
+                    >trending_up</span
+                  >
+                  NAPE monthly bulletin</a
+                >
+                <time class="media-meta" datetime="2015-06-12T20:50:48+08:00"
+                  >1 week ago</time
+                >
+              </li>
+            </ul>
+
+            <!-- profile-dropdown -->
+            <ul id="profile-dropdown" class="dropdown-content">
+              <li>
+                <a href="cards-basic.html" class="teal-text text-darken-4">
+                  <i class="material-icons">person_outline</i>
+                  <span class="nav-text">Account Details</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="ui-basic-buttons.html"
+                  class="teal-text text-darken-4"
+                >
+                  <i class="material-icons">update</i>
+                  <span class="nav-text">Update User Profile</span>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
-  </div>
+      </nav>
+    </div>
   </header>
   <!-- END HEADER -->
   <!-- //////////////////////////////////////////////////////////////////////////// -->
@@ -90,69 +233,140 @@
           <li class="user-details">
             <div class="row">
               <div class="col col s4 m4 l4">
-                <img src="images/avatar/avatar-7.png" alt="" class="circle responsive-img valign profile-image gray">
+                <img
+                  src="images/avatar/avatar-7.png"
+                  alt=""
+                  class="circle responsive-img valign profile-image gray"
+                />
               </div>
               <div class="col col s8 m8 l8">
-                <a class="btn-flat dropdown-button waves-effect waves-light white-text profile-btn bold" href="#" data-activates="profile-dropdown-nav">COURAGE<i class="mdi-navigation-arrow-drop-down right"></i></a>
-                <p class="user-roal white-text text-darken-1 bold">MENTOR</p>
+                <a
+                  class="btn-flat dropdown-button waves-effect waves-light white-text profile-btn bold"
+                  href="#"
+                  data-activates="profile-dropdown-nav"
+                  >COURAGE<i class="mdi-navigation-arrow-drop-down right"></i
+                ></a>
+                <p class="user-roal white-text text-darken-4 bold">MENTOR</p>
               </div>
             </div>
           </li>
           <li class="no-padding">
             <ul>
               <li class="bold">
-                <a href="index.html" class="waves-effect waves-cyan">
-                    <i class="material-icons">dashboard</i>
-                    <span class="nav-text">Dashboard</span><span class="new badge">14</span>
-                  </a>
+                <a
+                  href="mentor-dashboard.html"
+                  class="waves-effect waves-teal"
+                >
+                  <i class="material-icons">dashboard</i>
+                  <span class="nav-text">Dashboard</span
+                  ><span class="new badge">44</span>
+                </a>
               </li>
               <li class="bold">
-                <a href="cards-basic.html" class="waves-effect waves-cyan">
-                    <i class="material-icons">person_outline</i>
-                    <span class="nav-text">Account Details</span>
-                  </a>
+                <a
+                  href="progress-report-form.html"
+                  class="waves-effect waves-cyan"
+                >
+                  <i class="material-icons">person_outline</i>
+                  <span class="nav-text">Progress Report</span>
+                </a>
               </li>
               <li class="bold">
-                <a href="ui-basic-buttons.html" class="waves-effect waves-cyan">
-                    <i class="material-icons">update</i>
-                    <span class="nav-text">Update User Profile</span>
-                  </a>
+                <a
+                  href="mentor-update-profile.html"
+                  class="waves-effect waves-cyan"
+                >
+                  <i class="material-icons">update</i>
+                  <span class="nav-text">Update User Profile</span>
+                </a>
+              </li>
+              <li class="bold">
+                <a
+                  href="mentor-update-profile.html"
+                  class="waves-effect waves-cyan"
+                >
+                  <i class="material-icons">group</i>
+                  <span class="nav-text">Mentee</span>
+                </a>
               </li>
               <li class="bold">
                 <a href="form-layouts.html" class="waves-effect waves-cyan">
-                    <i class="material-icons">call_to_action</i>
-                    <span class="nav-text">Forum Page</span>
-                  </a>
+                  <i class="material-icons">call_to_action</i>
+                  <span class="nav-text">Forum Page</span>
+                </a>
               </li>
               <li class="bold">
                 <a href="css-typography.html" class="waves-effect waves-cyan">
-                    <i class="material-icons">dns</i>
-                    <span class="nav-text">Technical Meeting</span>
-                  </a>
+                  <i class="material-icons">dns</i>
+                  <span class="nav-text">Technical Meeting</span>
+                </a>
               </li>
               <li class="bold">
-                <a href="css-color.html" class="waves-effect waves-cyan">
-                    <i class="material-icons">live_help</i>
-                    <span class="nav-text">Help</span>
-                  </a>
+                <a href="logout.html" class="waves-effect waves-cyan">
+                  <i class="material-icons">keyboard_return</i>
+                  <span class="nav-text">Log Out</span>
+                </a>
               </li>
               <li class="bold">
-                <a href="css-color.html" class="waves-effect waves-cyan">
-                    <i class="material-icons">keyboard_return</i>
-                    <span class="nav-text">Log Out</span>
-                  </a>
+                <a
+                  href="../NapeYP_FrontEnd_/FrontEnd/meeting-details.html"
+                  class="waves-effect waves-cyan dropdown-trigger"
+                  data-activates="profile-dropdown2"
+                >
+                  <i class="material-icons">web</i>
+                  <span class="nav-text">website</span>
+                </a>
               </li>
               <li>
-                <a class="btn waves-effect waves-light teal" href="#" target="_blank">
-                  <i class="material-icons white-text">file_upload</i>Message to Admin
+                <a
+                  class="btn waves-effect waves-light teal"
+                  href="#"
+                  target="_blank"
+                >
+                  <i
+                    class="fa fa-paper-plane white-text"
+                    aria-hidden="true"
+                  ></i
+                  >Message to Admin
                 </a>
               </li>
             </ul>
           </li>
         </ul>
-        <a href="#" data-activates="slide-out" class="sidebar-collapse btn-floating btn-medium waves-effect waves-light hide-on-large-only">
-            <i class="material-icons">menu</i>
-          </a>
+        <a
+          href="#"
+          data-activates="slide-out"
+          class="sidebar-collapse btn-floating btn-medium waves-effect waves-light hide-on-large-only"
+        >
+          <i class="material-icons">menu</i>
+        </a>
+        <ul class="dropdown-content" id="profile-dropdown2">
+          <li>
+            <a href="#!" class="teal-text text-darken-4">
+              <i class="material-icons teal-text">home</i> Home</a
+            >
+          </li>
+          <li>
+            <a href="#!" class="teal-text text-darken-4">
+              <i class="material-icons teal-text">pets</i> Career</a
+            >
+          </li>
+          <li>
+            <a href="#!" class="teal-text text-darken-4">
+              <i class="material-icons teal-text">book</i> Publication</a
+            >
+          </li>
+          <li>
+            <a href="#!" class="teal-text text-darken-4">
+              <i class="material-icons teal-text">poll</i> Meeting</a
+            >
+          </li>
+          <li>
+            <a href="#!" class="teal-text text-darken-4">
+              <i class="material-icons teal-text">group_add</i> Membership</a
+            >
+          </li>
+        </ul>
       </aside>
       <!-- END LEFT SIDEBAR NAV-->
       <!-- //////////////////////////////////////////////////////////////////////////// -->
@@ -160,6 +374,9 @@
       <section id="content">
         <!--breadcrumbs start-->
         <div id="breadcrumbs-wrapper">
+          <div class="header-search-wrapper teal lighten-3 hide-on-large-only search-wrapper">
+           <input type="text" name="Search" class="" placeholder="Search">
+          </div>
           <div class="container">
             <div class="row">
               <div class="col s10 m6 l6">
@@ -222,11 +439,56 @@
                     </div>
                   </div>
                   <div class="col s12 m6 l6">
-                    <div class="card" >
+                    <div class="card" id="mapdiv__card" >
                       <!-- MAP CONTAINER -->
                       <div class="" id="mapdiv">
                       </div>
                     </div>
+                    <div class="card" id="mapdiv__card-legend" >
+                      <!-- MAP CONTAINER -->
+                      <div class="" id="mapdiv__legend">
+                        <ul class="mapdiv__legend-details">
+                          <li >
+                            <i class="material-icons blue-text text-darken-2">location_on</i> UK
+                            <a href="index.html" class="waves-effect waves-cyan btn right">
+                              view
+                            </a>   
+                          </li>
+                          <li >
+                            <i class="material-icons yellow-text text-darken-2">location_on</i> Abuja
+                            <a href="index.html" class="waves-effect waves-cyan btn right">
+                              view
+                            </a>   
+                          </li>
+                          <li >
+                            <i class="material-icons green-text text-darken-2">location_on</i> Lagos
+                            <a href="index.html" class="waves-effect waves-cyan btn right">
+                              view
+                            </a>   
+                          </li>
+                          <li >
+                            <i class="material-icons black-text text-darken-2">location_on</i> P/H
+                            <a href="index.html" class="waves-effect waves-cyan btn right">
+                              view
+                            </a>   
+                          </li>
+                          <li >
+                            <i class="material-icons purple-text text-darken-2">location_on</i> Benin City
+                            <a href="index.html" class="waves-effect waves-cyan btn right">
+                              view
+                            </a>   
+                          </li>
+                          <li >
+                            <i class="material-icons orange-text text-darken-2">location_on</i> warri
+                            <a href="index.html" class="waves-effect waves-cyan btn right">
+                              view
+                            </a>   
+                          </li>
+                          
+                      </ul>
+                      </div>
+                    </div>
+                    
                   </div>
                 </div>
               </div>

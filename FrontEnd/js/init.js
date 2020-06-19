@@ -13,7 +13,6 @@ $(document).click(function (e) {
 });
 
 // modal
-
 $(document).ready(function () {
   $('.modal').modal({
     opacity: 0.5,
@@ -23,10 +22,7 @@ $(document).ready(function () {
   });
 });
 
-// $(document).ready(function () {
-//   M.updateTextFields();
-// });
-
+// Check Box
 $(document).ready(function () {
   $('select').formSelect();
 });
