@@ -1,0 +1,100 @@
+/*Page: Mentee Starts here*/
+
+#mentor-update {
+  background-color: #e8f1f1 !important;
+  padding: 0px 70px;
+  text-align: justify;
+}
+
+#mentor-update .container {
+  background-color: #e0ebeb;
+}
+
+.mentor-update__row {
+  margin: 0;
+}
+
+.mentor-update__row .col.offset-m3 {
+  margin-left: 10%;
+}
+
+.mentor-update__row .col.m6 {
+  width: 80%;
+}
+
+.mentor-update__card {
+  margin: 65px 0 40px 0;
+  padding: 40px;
+  height: auto !important;
+}
+
+.mentor-update__card .container {
+  background-color: transparent !important;
+  width: 75% !important;
+}
+
+.mentor-update__card h4 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: center;
+  color: rgba(56, 54, 54, 0.623);
+}
+
+.mentor-update__card p {
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+  text-align: center;
+  color: rgba(56, 54, 54, 0.623);
+}
+
+.mentee__card-row {
+  margin-top: 50px;
+}
+
+.mentee__card-1 {
+  background-color: rgb(232, 241, 241);
+  height: 200px;
+}
+.mentee__card-col-1 {
+  margin-left: 80px !important;
+}
+
+.mentee__card-2 {
+  background-color: rgb(232, 241, 241);
+  height: 200px;
+}
+
+.mentee__card-col-2 {
+  margin-right: 80px;
+}
+
+.mentor-update__card h5 {
+  color: #1c6c6b;
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.mentor-update__card a.btn {
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.mentee__card-1 img,
+.mentee__card-2 img {
+  border-radius: 50%;
+  height: 90%;
+  display: block;
+  width: 90%;
+  margin: auto;
+}
+
+/* MOBILE */
+@media only screen and (max-width: 603px) {
+}
+
+/* IPAD OR TAB*/
+@media only screen and (min-width: 601px) and (max-width: 1125px) {
+}

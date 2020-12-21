@@ -1,0 +1,66 @@
+/*Page: LogoOut Starts here*/
+
+#mentor-update {
+  background-color: #e8f1f1 !important;
+  padding: 0px 70px;
+  text-align: justify;
+}
+
+#mentor-update .container {
+  background-color: #e0ebeb;
+}
+
+.mentor-update__row {
+  margin: 0;
+}
+
+.mentor-update__row .col.offset-m3 {
+  margin-left: 15% !important;
+}
+
+.mentor-update__row .col.m6 {
+  width: 70% !important;
+}
+
+.mentor-update__card {
+  margin: 65px 0 40px 0;
+  padding: 40px;
+  height: auto !important;
+}
+
+.mentor-update__card .container {
+  background-color: transparent !important;
+  width: 75% !important;
+}
+
+.mentor-update__card h4 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: center;
+  color: rgba(56, 54, 54, 0.623);
+}
+
+.mentor-update__card p {
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+  text-align: center;
+  color: rgba(56, 54, 54, 0.623);
+}
+
+.card-footer {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.card-footer a {
+  margin: 20px;
+}
+/* MOBILE */
+@media only screen and (max-width: 603px) {
+}
+
+/* IPAD OR TAB*/
+@media only screen and (min-width: 601px) and (max-width: 1125px) {
+}

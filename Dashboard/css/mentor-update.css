@@ -1,0 +1,159 @@
+/*Page: Mentor-Profile-Update Starts here*/
+
+#mentor-update {
+  background-color: #e8f1f1 !important;
+  padding: 0px 70px;
+  text-align: justify;
+}
+
+#mentor-update .container {
+  background-color: #e0ebeb;
+}
+
+.mentor-update__row {
+  margin: 0;
+}
+
+.mentor-update__row .col.offset-m3 {
+  margin-left: 15% !important;
+}
+
+.mentor-update__row .col.m6 {
+  width: 70% !important;
+}
+
+.mentor-update__card {
+  margin: 65px 0 40px 0;
+  padding: 40px;
+  height: auto !important;
+}
+
+.mentor-update__card .container {
+  background-color: transparent !important;
+  width: 75% !important;
+}
+
+.mentor-update__card h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 50px;
+  text-align: center;
+  color: rgba(56, 54, 54, 0.623);
+}
+
+#form {
+  display: block;
+  width: 80%;
+  /* margin: 20px; */
+}
+
+#form label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 20px;
+  margin-left: 20px;
+  float: left;
+  display: block !important;
+  margin: 5px 0 5px 20px;
+  color: #1c6c6b;
+}
+
+#mentor-update__inputs input {
+  font-size: 1rem;
+  font-weight: 600 !important;
+  height: 0px !important;
+  padding: 20px;
+  border: 2px solid rgb(230, 230, 230) !important;
+  border-radius: 10px;
+  display: inline-block !important;
+  margin: 10px 20px !important;
+  position: relative;
+}
+
+#mentor-update__inputs input:focus {
+  border: 2px solid #b6e0e0 !important;
+}
+
+#mentor-update__inputs textarea {
+  font-size: 1rem;
+  font-weight: 600 !important;
+  height: 200px !important;
+  padding: 20px;
+  border: 2px solid rgb(230, 230, 230) !important;
+  border-radius: 10px;
+  display: inline-block !important;
+  margin: 10px 40px !important;
+  width: 100%;
+}
+
+#mentor-update__inputs textarea:focus {
+  border: 2px solid #b6e0e0 !important;
+  border-radius: 10px !important;
+}
+
+.select-wrapper .caret {
+  margin: 50px 0 !important;
+}
+
+#form .mentor-update__pic-upload-1 {
+  font-weight: 600 !important;
+  padding: 20px;
+  border-radius: 10px;
+  display: inline-block !important;
+  margin: 0px !important;
+}
+
+#form .mentor-update__pic-upload-2 {
+  height: 0px !important;
+  padding: 20px 20px 20px 10px;
+  border-bottom: 2px solid rgb(230, 230, 230) !important;
+  margin: 0 20px 0 0 !important;
+  width: 100% !important;
+  /* position: relative;
+  top: -7px; */
+}
+
+/* #form .mentor-update__pic-upload-btn {
+  height: 36px;
+} */
+
+#form .file-path-wrapper {
+  padding-left: 0;
+}
+
+#form .mentor-update__pic-upload-label {
+  display: block !important;
+  width: 100%;
+  margin-bottom: 0px !important;
+}
+
+.input-field {
+  /* position: relative; */
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 8px !important;
+}
+
+.mentor-update__terms h5 {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 5px !important;
+}
+
+.mentor-update__terms a {
+  color: #26a69a !important;
+}
+
+.mentor-update__join-button {
+  margin-right: 100px !important;
+  background-color: #1c6c6b !important;
+}
+
+/* MOBILE */
+@media only screen and (max-width: 603px) {
+}
+
+/* IPAD OR TAB*/
+@media only screen and (min-width: 601px) and (max-width: 1125px) {
+}
