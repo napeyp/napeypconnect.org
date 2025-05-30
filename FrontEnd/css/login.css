@@ -1,0 +1,133 @@
+/*Page: Login Starts here*/
+
+#login {
+  background-color: #e8f1f1 !important;
+  padding: 0px 70px;
+  text-align: justify;
+}
+
+#login .container {
+  background-color: #e0ebeb !important;
+}
+
+.login__row {
+  margin: 0;
+}
+
+.login__card {
+  margin: 65px 0 40px 0;
+  padding: 40px 40px;
+  height: 500px !important;
+}
+
+#login p {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.login__login {
+  text-align: center;
+}
+
+.login__login h4 {
+  font-size: 1.2rem;
+  font-weight: 900;
+  margin: 1.2rem 0;
+}
+
+.login__login h2 {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #9a9a9a;
+  line-height: 0.1em;
+  margin: 10px 0 0px;
+}
+
+.login__login span {
+  background: #fff;
+  padding: 0 10px;
+  font-size: 1rem;
+}
+
+.login__terms h4,
+.login__partners-caption {
+  margin-top: 0 !important;
+  font-size: 1rem !important;
+  font-weight: 800 !important;
+  margin: 1.2rem 0 !important;
+}
+
+.login__terms a,
+.login__partners a {
+  color: #26a69a !important;
+}
+
+/* MODAL FOR NAPE ID */
+.modal {
+  width: 30%;
+}
+
+.modal .modal-content {
+  text-align: center;
+}
+
+.login__napeyp-id {
+  height: 40px;
+  margin: 5px 0 12px 0 !important;
+}
+
+.login__napeyp-id input {
+  height: 90% !important;
+  border: 1.5px solid #c8dae8 !important;
+  border-radius: 10px !important;
+  padding: 2px 10px !important;
+  width: 80% !important;
+  margin: auto !important;
+}
+
+.login__napeyp-id input:focus {
+  background-color: rgba(123, 187, 212, 0.233) !important;
+}
+
+#form a {
+  color: white !important;
+}
+
+/* MOBILE */
+@media only screen and (max-width: 603px) {
+  #login {
+    padding: 0;
+  }
+
+  #login .container {
+    width: 100%;
+  }
+
+  .login__card {
+    padding: 20px 30px !important;
+    height: 540px !important;
+  }
+
+  .row .col.offset-s1 {
+    margin-left: 0 !important;
+  }
+
+  .row .col.s10 {
+    width: 100% !important;
+  }
+}
+
+/* IPAD OR TAB*/
+@media only screen and (min-width: 601px) and (max-width: 1125px) {
+  .row .col.m6 {
+    width: 100%;
+  }
+
+  .row .col.offset-m3 {
+    margin: 5px;
+  }
+
+  .login__card {
+    height: 450px !important;
+  }
+}

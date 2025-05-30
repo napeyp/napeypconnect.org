@@ -1,0 +1,158 @@
+/*Page: Mentor INFO Starts here*/
+
+#mentor-info {
+  background-color: #e8f1f1 !important;
+  padding: 0px 70px;
+  text-align: justify;
+  position: relative;
+}
+
+.mentor-info__row {
+  margin: 0;
+  position: relative;
+}
+
+.mentor-info__card {
+  margin: 0;
+  padding: 80px 40px;
+  height: 1800px !important;
+}
+
+.mentor-info__apply {
+  background-color: #e8f1f1 !important;
+  height: 200px;
+  box-shadow: 2px 2px 2px 2px rgb(230, 230, 230);
+  padding: 20px;
+  width: 100% !important;
+}
+
+.mentor-info__apply div {
+  width: 60%;
+  float: left;
+}
+
+.mentor-info__apply img {
+  display: block;
+  float: right;
+  width: 35%;
+}
+
+.mentor-info__apply h5 {
+  color: #559291;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.mentor-info__mentor-volunteer p,
+.mentor-info__apply p {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.mentor-info__mentor-volunteer h5,
+.mentor-info__dos h5,
+.mentor-info__donts h5 {
+  color: #559291;
+  font-size: 1.1rem;
+  font-weight: 700;
+  padding: 20px 0;
+}
+
+.mentor-info__mentor-volunteer li,
+.mentor-info__dos li,
+.mentor-info__donts li {
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 5px;
+  list-style-type: disc !important;
+}
+
+@media only screen and (min-width: 603px) {
+  .mentor-info__col-1 {
+    width: 50% !important;
+    float: left;
+  }
+  .mentor-info__col-2 {
+    width: 45% !important;
+    float: right !important;
+  }
+}
+/* MOBILE */
+@media only screen and (max-width: 603px) {
+  #mentor-info {
+    padding: 0;
+  }
+
+  .mentor-info__card {
+    padding: 40px 20px;
+    height: 100% !important;
+    position: relative;
+    overflow: auto;
+  }
+
+  .mentor-info__apply {
+    margin: 20px 0;
+    padding: 20px;
+    height: 240px;
+    position: relative;
+  }
+
+  .mentor-info__mentor-volunteer h5,
+  .mentor-info__dos h5,
+  .mentor-info__donts h5 {
+    color: #559291;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 10px 0;
+  }
+
+  .mentor-info__mentor-volunteer li,
+  .mentor-info__dos li,
+  .mentor-info__donts li {
+    list-style-type: disc !important;
+    line-height: 2rem !important;
+  }
+
+  .mentor-info__mentor-volunteer p {
+    line-height: 2rem !important;
+  }
+
+  .mentor-info__apply div {
+    width: 100%;
+    position: relative;
+    text-align: left;
+  }
+
+  .mentor-info__icon {
+    display: block;
+    position: relative;
+    top: -100%;
+    right: -5%;
+  }
+
+  .mentor-info__apply img {
+    width: 40%;
+  }
+
+  .mentor-info__apply h5 {
+    margin: 0px 0 20px 0;
+    width: 60%;
+  }
+
+  .mentor-info__apply p {
+    line-height: 2rem !important;
+    width: 60%;
+  }
+}
+
+/* IPAD OR TAB*/
+@media only screen and (min-width: 601px) and (max-width: 1125px) {
+  #mentor-info .container {
+    width: 100%;
+  }
+
+  .mentor-info__card {
+    padding: 80px 20px;
+    overflow: auto !important;
+  }
+}
